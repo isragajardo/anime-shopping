@@ -11,8 +11,7 @@ let btnEliminar = document.querySelectorAll(".carrito-producto-eliminar")
 
 
 
-function cargarProductosCarrito()
-{
+function cargarProductosCarrito(){
     document.querySelector("#contenedor-carrito").classList.remove("disabled")
     if (productosEnCarrito && productosEnCarrito.length > 0) //si la variable contiene algo hara lo siguiente
   {
