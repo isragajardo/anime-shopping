@@ -2,7 +2,7 @@ const productos= [
     {
         id : "abrigo-01",
         titulo : "Naruto",
-        imagen : "./img/naruto/naruto.jpg",
+        imagen : "./img/naruto/naruto-abrigos/naruto-abrigo-01.png",
         categoria : {
             nombre: "anime",
             id : "abrigos"
@@ -11,8 +11,8 @@ const productos= [
     },
     {
         id : "abrigo-02",
-        titulo : "Naruto",
-        imagen : "./img/naruto/naruto.jpg",
+        titulo : "Hinata",
+        imagen : "./img/naruto/naruto-abrigos/naruto-abrigo-02.png",
         categoria : {
             nombre: "anime",
             id : "abrigos"
@@ -22,7 +22,7 @@ const productos= [
     {
         id : "abrigo-03",
         titulo : "Naruto",
-        imagen : "./img/naruto/naruto.jpg",
+        imagen : "./img/naruto/naruto-abrigos/naruto-abrigo-03.png",
         categoria : {
             nombre: "anime",
             id : "abrigos"
@@ -32,7 +32,7 @@ const productos= [
     {
         id : "abrigo-04",
         titulo : "Naruto",
-        imagen : "./img/naruto/naruto.jpg",
+        imagen : "./img/naruto/naruto-abrigos/naruto-abrigo-04.png",
         categoria : {
             nombre: "anime",
             id : "abrigos"
@@ -42,7 +42,7 @@ const productos= [
     {
         id : "abrigo-05",
         titulo : "Naruto",
-        imagen : "./img/naruto/naruto.jpg",
+        imagen : "./img/naruto/naruto-abrigos/naruto-abrigo-05.png",
         categoria : {
             nombre: "anime",
             id : "abrigos"
@@ -52,7 +52,27 @@ const productos= [
     {
         id : "abrigo-06",
         titulo : "Naruto",
-        imagen : "./img/naruto/naruto.jpg",
+        imagen : "./img/naruto/naruto-abrigos/naruto-abrigo-06.png",
+        categoria : {
+            nombre: "anime",
+            id : "abrigos"
+        },
+        precio : 1000
+    },
+    {
+        id : "abrigo-06",
+        titulo : "Naruto",
+        imagen : "./img/naruto/naruto-abrigos/naruto-abrigo-07.png",
+        categoria : {
+            nombre: "anime",
+            id : "abrigos"
+        },
+        precio : 1000
+    },
+    {
+        id : "abrigo-06",
+        titulo : "Naruto",
+        imagen : "./img/naruto/naruto-abrigos/naruto-abrigo-08.png",
         categoria : {
             nombre: "anime",
             id : "abrigos"
