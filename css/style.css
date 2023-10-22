@@ -2,7 +2,7 @@
 
 :root {
 
-    --color-main: #e77808;
+    --color-main: #e4780d;
     --color-white: #ececec;
     --color-gray: #c2bfbf;
     --color-red: #961818;
@@ -115,6 +115,7 @@ main
 .producto-imagen
 {
     max-width: 100%;
+    max-height: 100%;
     border-radius: 1rem;
 }
 
@@ -157,12 +158,6 @@ main
     gap: 2rem;
 }
 
-.carrito-vacio,
-.carrito-comprado
-{
-    color: var(--color-main);
-    display: none;
-}
 
 .carrito-productos
 {

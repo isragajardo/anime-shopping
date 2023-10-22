@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/carrito.js" defer></script>
 </head>
 <body>
 
@@ -20,7 +21,7 @@
                         
                     </li>
                     
-                    <li><a class="btn-carrito btn-menu active" href="./pages/carrito.html">Carrito <span class="numerito"> 0</span></a>
+                    <li><a class="btn-carrito btn-menu active" href="./pages/carrito.html">Carrito <span id="numero-carrito" class="numerito"> 0</span></a>
                     </li>
                 </ul>
             </nav>
@@ -32,62 +33,19 @@
         </aside>
         <main>
             <h2 class="titulo-carrito">Carrito</h2>
+            <p id="carrito-vacio" class="carrito-vacio">
+                Tu carrito esta vacio
+            </p>
             <div class="contenedor-carrito">
-                <p class="carrito-vacio">
-                    Tu carrito esta vacio
-                </p>
-
-                <div class="carrito-productos disabled">
-                    <div class="carrito-producto">
-                        <img class="carrito-imagen" src="../img/naruto.png" alt="">
-                        <div class="carrito-producto-titulo">
-                            <small>Titulo</small>
-                            <h3>Abrigo 01</h3>
-
-                        </div>
-                        <div class="carrito-producto-cantidad">
-                            <small>Cantidad</small>
-                            <p>1</p>
-                        </div>
-                        <div class="carrito-producto-precio">
-                            <small>Precio</small>
-                            <p>$1000</p>
-                        </div>
-                        <div class="carrito-producto-subtotal">
-                            <small>Sub total</small>
-                            <p>1000$</p>
-                        </div>
-                        <button class="carrito-producto-eliminar">Eliminar</button>
-                    </div>
                 
 
-                
-                    <div class="carrito-producto">
-                        <img class="carrito-imagen" src="../img/naruto.png" alt="">
-                        <div class="carrito-producto-titulo">
-                            <small>Titulo</small>
-                            <h3>Abrigo 02</h3>
-
-                        </div>
-                        <div class="carrito-producto-cantidad">
-                            <small>Cantidad</small>
-                            <p>2</p>
-                        </div>
-                        <div class="carrito-producto-precio">
-                            <small>Precio</small>
-                            <p>$2000</p>
-                        </div>
-                        <div class="carrito-producto-subtotal">
-                            <small>Sub total</small>
-                            <p>2000$</p>
-                        </div>
-                        <button class="carrito-producto-eliminar">Eliminar</button>
-                    </div>
+                <div id="carrito-productos" class="carrito-productos disabled">
+                    
                 </div>
 
-                <div class="carrito-acciones disabled">
+                <div id="carrito-acciones" class="carrito-acciones disabled">
                     <div class="carrito-acciones-izquierda">
-                        <button class="carrito-acciones-vaciar">Vaciar carrito</button>
+                        <button id="vaciar-carrito" class="carrito-acciones-vaciar">Vaciar carrito</button>
     
                     </div>
     
@@ -103,10 +61,11 @@
                     </div>
                 </div>
 
-                
 
 
             </div>
+            <p id="carrito-comprado" class="carrito-comprado disabled">Muchas gracias por su compra</p>
+
 
             
 
