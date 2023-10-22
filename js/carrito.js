@@ -132,3 +132,12 @@ vaciarCarrito.addEventListener("click", () =>{
 function actualizarTotal(){
     total.innerText = productosEnCarrito.reduce((acumulador, producto) => acumulador + (producto.precio * producto.cantidad),0)
 }
+
+btnComprar = document.querySelector(".carrito-acciones-comprar");
+btnComprar.addEventListener("click", ()=>{
+
+   
+    document.querySelector("#contenedor-carrito").classList.add("disabled")
+    document.querySelector("#carrito-comprado").classList.remove("disabled")
+
+})
