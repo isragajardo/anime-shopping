@@ -93,7 +93,7 @@ function eliminadorDeCarrito(e){
     console.log(productosEnCarrito.index)
 
     localStorage.setItem("productos-en-carrito", productosEnCarrito);
-    actualizarNumeroCarrito()
+    
   
 }
 
@@ -104,12 +104,9 @@ function eliminadorDeCarrito(e){
 
 const numeroCarrito = document.querySelector("#numero-carrito")
 
-function actualizarNumeroCarrito(){
-    let nuevoNumero = productosEnCarrito.reduce((acumulador, producto) => acumulador + producto.cantidad,0)
-    numeroCarrito.innerText = nuevoNumero
-}
 
-actualizarNumeroCarrito()
+
+
 
 /****************/
 
@@ -123,7 +120,6 @@ vaciarCarrito.addEventListener("click", () =>{
     localStorage.clear();
     carritoVacio.classList.remove("disabled")
     contenedorProductos.classList.add("disabled")
-    numeroCarrito.innerText = "0"
     total.innerHTML = "0"
 })
 
@@ -138,6 +134,6 @@ btnComprar.addEventListener("click", ()=>{
 
    
     document.querySelector("#contenedor-carrito").classList.add("disabled")
-    document.querySelector("#carrito-comprado").classList.remove("disabled")
+    document.querySelector("#contenedor-carrito").classList.remove("disabled")
 
 })
