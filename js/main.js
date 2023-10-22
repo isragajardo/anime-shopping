@@ -242,18 +242,20 @@ const productos= [
         precio : 1000
     }
 ]
+
 const contenedorProductos = document.querySelector("#contenedor-productos");
 const btnCategorias = document.querySelectorAll(".btn-categoria");
 const tituloPrincipal = document.querySelector("#titulo-principal");
 let btnAgregarCarrito
-const numeroCarrito = document.querySelector("#numero-carrito")
-let productosEnCarrito
+const numeroCarrito = document.querySelector("#numero-carrito");
 
-let productosEnCarritoJson = localStorage.getItem("productos-en-carrito")
+let productosEnCarrito = []
+
+const productosEnCarritoJson = localStorage.getItem("productos-en-carrito");
 if(productosEnCarritoJson)
 {
-    productosEnCarritoJson = JSON.parse(localStorage.getItem("productos-en-carrito"))
-    productosEnCarrito = productosEnCarritoJson;
+    
+    productosEnCarrito = JSON.parse(productosEnCarritoJson);
     actualizarNumeroCarrito()
 }else{
     productosEnCarrito = []
@@ -285,6 +287,7 @@ function cargarProductos(ProductoSeleccionado)
     })
 
 }
+cargarProductos(productos)
 
 
 btnCategorias.forEach(boton => {

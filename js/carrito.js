@@ -13,6 +13,7 @@ let btnEliminar = document.querySelectorAll(".carrito-producto-eliminar")
 
 function cargarProductosCarrito()
 {
+    document.querySelector("#contenedor-carrito").classList.remove("disabled")
     if (productosEnCarrito && productosEnCarrito.length > 0) //si la variable contiene algo hara lo siguiente
   {
     carritoVacio.classList.add("disabled")
@@ -76,6 +77,7 @@ function actualizarBotonesEliminar() {
     
     btnEliminar = document.querySelectorAll(".carrito-producto-eliminar")
     
+    
 
     btnEliminar.forEach(boton =>{
         boton.addEventListener("click", eliminadorDeCarrito);
@@ -92,7 +94,8 @@ function eliminadorDeCarrito(e){
     cargarProductosCarrito()
     console.log(productosEnCarrito.index)
 
-    localStorage.setItem("productos-en-carrito", productosEnCarrito);
+    localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
+
     
   
 }
@@ -134,6 +137,5 @@ btnComprar.addEventListener("click", ()=>{
 
    
     document.querySelector("#contenedor-carrito").classList.add("disabled")
-    document.querySelector("#contenedor-carrito").classList.remove("disabled")
-
+    document.querySelector("#carrito-comprado").classList.remove("disabled")
 })
