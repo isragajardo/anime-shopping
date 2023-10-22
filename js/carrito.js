@@ -66,6 +66,7 @@ function cargarProductosCarrito()
     
   }
   actualizarBotonesEliminar()
+  actualizarTotal()
 }
 
 
@@ -92,7 +93,7 @@ function eliminadorDeCarrito(e){
     console.log(productosEnCarrito.index)
 
     localStorage.setItem("productos-en-carrito", productosEnCarrito);
-    
+    actualizarNumeroCarrito()
   
 }
 
@@ -123,5 +124,11 @@ vaciarCarrito.addEventListener("click", () =>{
     carritoVacio.classList.remove("disabled")
     contenedorProductos.classList.add("disabled")
     numeroCarrito.innerText = "0"
+    total.innerHTML = "0"
 })
 
+/****************/
+
+function actualizarTotal(){
+    total.innerText = productosEnCarrito.reduce((acumulador, producto) => acumulador + (producto.precio * producto.cantidad),0)
+}
