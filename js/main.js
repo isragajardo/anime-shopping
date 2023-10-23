@@ -1,24 +1,29 @@
-let productos = [];
-
-fetch('./json/productos.json')
-  .then(response => response.json())
-  .then(data => {
-    productos = data; // Asigna el JSON a la variable "productos"
-    console.log(productos); // Puedes imprimir los productos para verificar
-  })
-  .catch(error => console.error('Error al cargar productos:', error));
-
-console.log(productos)
-
-
 
 const contenedorProductos = document.querySelector("#contenedor-productos");
 const btnCategorias = document.querySelectorAll(".btn-categoria");
 const tituloPrincipal = document.querySelector("#titulo-principal");
 let btnAgregarCarrito
 const numeroCarrito = document.querySelector("#numero-carrito");
-
 let productosEnCarrito = []
+let productos = [];
+
+
+
+/***fetch */
+
+fetch('./json/productos.json')
+    .then(response => response.json())
+    .then(data => {
+      productos = data; // aqui asigno el JSON a la variable "productos"
+      
+      cargarProductos(productos);
+    })
+    .catch(error => console.error('Error al cargar productos:', error));
+
+/*******/
+
+
+
 
 const productosEnCarritoJson = localStorage.getItem("productos-en-carrito");
 if(productosEnCarritoJson)
@@ -30,11 +35,13 @@ if(productosEnCarritoJson)
     productosEnCarrito = []
 }
 
-function cargarProductos(ProductoSeleccionado)
+
+
+function cargarProductos(productoSeleccionado)
 {
     contenedorProductos.innerHTML ="";
-    
-    ProductoSeleccionado.forEach(producto => {
+
+    productoSeleccionado.forEach(producto => {
 
         const div = document.createElement("div");
         div.classList.add("producto");
@@ -48,7 +55,7 @@ function cargarProductos(ProductoSeleccionado)
            </div>
 
         `
-        console.log(producto.id)
+        
         contenedorProductos.appendChild(div)
         actualizarBotonesAgregar();
 
@@ -56,7 +63,6 @@ function cargarProductos(ProductoSeleccionado)
     })
 
 }
-cargarProductos(productos)
 
 
 btnCategorias.forEach(boton => {
@@ -68,6 +74,7 @@ btnCategorias.forEach(boton => {
         btnCategorias.forEach(boton => boton.classList.remove("active"))
 
         addActiveClass.currentTarget.classList.add("active");
+        
 
         if(addActiveClass.currentTarget.id != "todos")
         {
@@ -95,7 +102,7 @@ btnCategorias.forEach(boton => {
 function actualizarBotonesAgregar () {
     
     btnAgregarCarrito = document.querySelectorAll(".producto-agregar")
-    console.log("test")
+  
 
     btnAgregarCarrito.forEach(boton =>{
         boton.addEventListener("click", agregarAlCarrito);
@@ -133,7 +140,7 @@ function agregarAlCarrito(valor){
 }
 function actualizarNumeroCarrito(){
     let nuevoNumero = productosEnCarrito.reduce((acumulador, producto) => acumulador + producto.cantidad,0)
-    console.log(nuevoNumero)
+    
     numeroCarrito.innerText = nuevoNumero
 }
 

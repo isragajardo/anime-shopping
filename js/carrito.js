@@ -88,10 +88,9 @@ function eliminadorDeCarrito(e){
     /*const index = productosEnCarrito.findIndex(producto => producto.id === idBoton);
     console.log(index) */
     const index = productosEnCarrito.findIndex(producto => producto.id === idBoton)
-    console.log(productosEnCarrito)
+   
     productosEnCarrito.splice(index, 1);
     cargarProductosCarrito()
-    console.log(productosEnCarrito.index)
 
     localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
 
@@ -118,7 +117,6 @@ const numeroCarrito = document.querySelector("#numero-carrito")
 /*vaciar carrito*/
 
 vaciarCarrito.addEventListener("click", () =>{
-    console.log("test")
     localStorage.clear();
     carritoVacio.classList.remove("disabled")
     contenedorProductos.classList.add("disabled")
