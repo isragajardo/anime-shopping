@@ -1,0 +1,83 @@
+[
+    
+    {
+        "id": "abrigo-01",
+        "titulo": "kimetsu no yaiba",
+        "imagen": "../img/kimetsu-no-yaiba/ds-abrigos/ds-abrigo-01.png",
+        "categoria": {
+            "nombre": "Abrigos kimetsu no yaiba",
+            "id": "abrigos"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "abrigo-02",
+        "titulo": "kimetsu no yaiba",
+        "imagen": "../img/kimetsu-no-yaiba/ds-abrigos/ds-abrigo-02.png",
+        "categoria": {
+            "nombre": "Abrigos kimetsu no yaiba",
+            "id": "abrigos"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "abrigo-03",
+        "titulo": "kimetsu no yaiba",
+        "imagen": "../img/kimetsu-no-yaiba/ds-abrigos/ds-abrigo-03.png",
+        "categoria": {
+            "nombre": "Abrigos kimetsu no yaiba",
+            "id": "abrigos"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "abrigo-04",
+        "titulo": "kimetsu no yaiba",
+        "imagen": "../img/kimetsu-no-yaiba/ds-abrigos/ds-abrigo-04.png",
+        "categoria": {
+            "nombre": "Abrigos kimetsu no yaiba",
+            "id": "abrigos"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "abrigo-05",
+        "titulo": "kimetsu no yaiba",
+        "imagen": "../img/kimetsu-no-yaiba/ds-abrigos/ds-abrigo-05.png",
+        "categoria": {
+            "nombre": "Abrigos kimetsu no yaiba",
+            "id": "abrigos"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "abrigo-06",
+        "titulo": "kimetsu no yaiba",
+        "imagen": "../img/kimetsu-no-yaiba/ds-abrigos/ds-abrigo-06.png",
+        "categoria": {
+            "nombre": "Abrigos kimetsu no yaiba",
+            "id": "abrigos"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "abrigo-07",
+        "titulo": "kimetsu no yaiba",
+        "imagen": "../img/kimetsu-no-yaiba/ds-abrigos/ds-abrigo-07.png",
+        "categoria": {
+            "nombre": "Abrigos kimetsu no yaiba",
+            "id": "abrigos"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "abrigo-08",
+        "titulo": "kimetsu no yaiba",
+        "imagen": "../img/kimetsu-no-yaiba/ds-abrigos/ds-abrigo-08.png",
+        "categoria": {
+            "nombre": "Abrigos kimetsu no yaiba",
+            "id": "abrigos"
+        },
+        "precio": 1000
+    }
+]
