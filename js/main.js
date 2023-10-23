@@ -22,7 +22,7 @@ naruto.addEventListener("click", ()=>{
       productos = data; // aqui asigno el JSON a la variable "productos"
       setTimeout(()=>{
         cargarProductos(productos)
-      },100)
+      },200)
       
     })
     .catch(error => console.error('Error al cargar productos:', error));
@@ -40,7 +40,7 @@ demonSlayer.addEventListener("click", ()=>{
       productos = data; // aqui asigno el JSON a la variable "productos"
       setTimeout(()=>{
         cargarProductos(productos)
-      },100)
+      },200)
       
     })
     .catch(error => console.error('Error al cargar productos:', error));
