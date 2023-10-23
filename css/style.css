@@ -54,6 +54,7 @@ aside{
 {
     font-weight: 400;
     font-size: 2.2rem;
+    color: black;
 }
 
 .menu{
@@ -248,4 +249,50 @@ main
     display: grid;
     grid-template-columns: 1fr 4fr;
     
+}
+.titulo-anime{
+    display: flex;
+    justify-content: center;
+}
+.target-anime{
+    display: grid;
+    margin-top: 5%;
+    grid-template-columns: repeat(2,6fr);
+    height: 90%;
+    gap: 1rem;
+    
+}
+.target-anime-select{
+    border: 0;
+   
+    border-top-left-radius: 48%;
+    border-top-right-radius: 48%;
+
+}
+.naruto{
+    box-shadow: 0px -1px 20px 1px orange;
+    
+}
+.naruto:hover{
+    box-shadow: 0px -1px 20px 15px orange;
+    
+}
+.demon-slayer{
+    box-shadow: 0px -1px 20px 1px green;
+
+}
+.demon-slayer:hover{
+    box-shadow: 0px -1px 20px 15px green;
+
+}
+
+@keyframes rotate {from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}}
+@-webkit-keyframes rotate {from {-webkit-transform: rotate(0deg);}
+  to {-webkit-transform: rotate(360deg);}}
+.titulo-anime img{
+    -webkit-animation: 4s rotate linear infinite;
+    animation: 4s rotate linear infinite;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
 }

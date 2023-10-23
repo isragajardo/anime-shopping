@@ -2,23 +2,57 @@
 const contenedorProductos = document.querySelector("#contenedor-productos");
 const btnCategorias = document.querySelectorAll(".btn-categoria");
 const tituloPrincipal = document.querySelector("#titulo-principal");
-let btnAgregarCarrito
 const numeroCarrito = document.querySelector("#numero-carrito");
+const naruto = document.querySelector("#naruto");
+const demonSlayer = document.querySelector("#demon-slayer");
+const animeSelect = document.querySelector("#anime-select");
 let productosEnCarrito = []
 let productos = [];
+let btnAgregarCarrito
+
+naruto.addEventListener("click", ()=>{
+
+    document.documentElement.style.setProperty('--fondo', 'url("../img/fondo-naruto.jpg")');
+    animeSelect.classList.add("disabled")
+
+
+    fetch('./json/productos-naruto.json')
+    .then(response => response.json())
+    .then(data => {
+      productos = data; // aqui asigno el JSON a la variable "productos"
+      setTimeout(()=>{
+        cargarProductos(productos)
+      },100)
+      
+    })
+    .catch(error => console.error('Error al cargar productos:', error));
+
+})
+
+demonSlayer.addEventListener("click", ()=>{
+
+    document.documentElement.style.setProperty('--fondo', 'url("../img/fondo-ds.png")');
+    animeSelect.classList.add("disabled")
+    
+    fetch('./json/productos-demon-slayer.json')
+    .then(response => response.json())
+    .then(data => {
+      productos = data; // aqui asigno el JSON a la variable "productos"
+      setTimeout(()=>{
+        cargarProductos(productos)
+      },100)
+      
+    })
+    .catch(error => console.error('Error al cargar productos:', error));
+
+})
+
 
 
 
 /***fetch */
 
-fetch('./json/productos-naruto.json')
-    .then(response => response.json())
-    .then(data => {
-      productos = data; // aqui asigno el JSON a la variable "productos"
-      cargarProductos(productos)
-      
-    })
-    .catch(error => console.error('Error al cargar productos:', error));
+
 
 /*******/
 
