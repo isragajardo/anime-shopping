@@ -11,12 +11,12 @@ let productos = [];
 
 /***fetch */
 
-fetch('./json/productos.json')
+fetch('./json/productos-naruto.json')
     .then(response => response.json())
     .then(data => {
       productos = data; // aqui asigno el JSON a la variable "productos"
+      cargarProductos(productos)
       
-      cargarProductos(productos);
     })
     .catch(error => console.error('Error al cargar productos:', error));
 

@@ -121,6 +121,9 @@ vaciarCarrito.addEventListener("click", () =>{
     carritoVacio.classList.remove("disabled")
     contenedorProductos.classList.add("disabled")
     total.innerHTML = "0"
+    
+    
+
 })
 
 /****************/

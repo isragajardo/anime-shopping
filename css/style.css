@@ -4,6 +4,7 @@
     --color-white: #ececec;
     --color-gray: #c2bfbf;
     --color-red: #961818;
+    --fondo: url("../img/fondo-naruto.jpg");
 
 }
 
@@ -33,7 +34,8 @@ a
 {
     display: grid;
     grid-template-columns: 1fr 4fr;
-    background-color: var(--color-main);
+    background-image: var(--fondo);
+    
 }
 
 aside{
@@ -241,3 +243,9 @@ main
 }
 
 
+.wrapper
+{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    
+}
