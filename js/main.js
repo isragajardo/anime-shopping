@@ -172,6 +172,7 @@ function agregarAlCarrito(valor){
 
     
 }
+
 function actualizarNumeroCarrito(){
     let nuevoNumero = productosEnCarrito.reduce((acumulador, producto) => acumulador + producto.cantidad,0)
     

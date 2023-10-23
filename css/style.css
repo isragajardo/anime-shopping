@@ -256,7 +256,7 @@ main
 }
 .target-anime{
     display: grid;
-    margin-top: 5%;
+    margin-bottom: 5%;
     grid-template-columns: repeat(2,6fr);
     height: 90%;
     gap: 1rem;
