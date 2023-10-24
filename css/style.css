@@ -138,21 +138,6 @@ main
     padding: 2rem;
 }
 
-.volver
-{
-    border: 0;
-    align-items: flex-start;
-    
-    
- 
-}
-.volver-naruto-text{
-    font-size: 1.2rem;
-    color: #FF8000;
-    transform: translate(1.2rem,0);
-
-    
-}
 
 .btn-volver
 {
@@ -174,8 +159,6 @@ main
 {
     width: 100px;
 
-   
-
 }
 .titulo-principal
 {
@@ -194,6 +177,7 @@ main
         display: grid;
         grid-template-columns: repeat(2,1fr);
         gap: 1rem;
+
     }
     
 }
@@ -364,6 +348,56 @@ main
         height: 300px;
 
     }
+    .wrapper
+    {
+       display: flex;
+       flex-direction: column;
+       
+        
+    }
+    aside{
+        height: 30vh;
+        background-color: var(--fondo);
+        position: fixed;
+        width: 100%;
+        
+        
+        
+        
+    }
+    .menu{
+        display: none;
+        
+    }
+
+ 
+
+    .btn-carrito{
+        display: none;
+    }
+    .menu li{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 0px 10px 0px;
+    }
+    .text-footer{
+        display: none;
+    }
+    .producto-detalles
+    {
+        
+        position: inherit; 
+    }
+    main{
+        margin-top: 250px;
+        margin-left: 20px;
+    }
+    .volver{
+        transform: translate(200px, -100px);
+    }
+
      
 
 }
