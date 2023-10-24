@@ -35,24 +35,28 @@ const cambioPagNaruto = ()=>{
     .catch(error => console.error('Error al cargar productos:', error));
 }
 
-const cambioPagDs = ()=>{
+const cambioPagDs = async()=>{
     document.documentElement.style.setProperty('--fondo', 'green');
     animeSelect.classList.add("disabled")
     volverNaruto.classList.remove("disabled")
     volverDs.classList.add("disabled")
 
 
-    fetch('./json/productos-demon-slayer.json')
-    .then(response => response.json())
-    .then(data => {
-      productos = data; // aqui asigno el JSON a la variable "productos"
-      setTimeout(()=>{
+    try{
+
+        const response = await fetch('./json/productos-demon-slayer.json');
+        const data = await response.json();
+        cargarProductos(data);
         menu.classList.remove("disabled")
-        cargarProductos(productos)
-      },300)
-      
-    })
-    .catch(error => console.error('Error al cargar productos:', error));
+
+
+
+
+        
+    } catch{
+        console.error('Error al cargar productos:', error)
+    }
+    
     
 }
 
