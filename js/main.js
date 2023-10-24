@@ -6,6 +6,7 @@ const numeroCarrito = document.querySelector("#numero-carrito");
 const naruto = document.querySelector("#naruto");
 const demonSlayer = document.querySelector("#demon-slayer");
 const animeSelect = document.querySelector("#anime-select");
+const menu = document.querySelector("#menu")
 let productosEnCarrito = []
 let productos = [];
 let btnAgregarCarrito
@@ -21,6 +22,7 @@ naruto.addEventListener("click", ()=>{
     .then(data => {
       productos = data; // aqui asigno el JSON a la variable "productos"
       setTimeout(()=>{
+        menu.classList.remove("disabled")
         cargarProductos(productos)
       },200)
       
@@ -39,6 +41,7 @@ demonSlayer.addEventListener("click", ()=>{
     .then(data => {
       productos = data; // aqui asigno el JSON a la variable "productos"
       setTimeout(()=>{
+        menu.classList.remove("disabled")
         cargarProductos(productos)
       },200)
       
