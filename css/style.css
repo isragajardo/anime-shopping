@@ -188,6 +188,15 @@ main
     grid-template-columns: repeat(4,1fr);
     gap: 1rem;
 }
+@media(max-width:800px) {
+    .contenedor-productos
+    {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 1rem;
+    }
+    
+}
 
 .producto-imagen
 {
@@ -337,6 +346,26 @@ main
     height: 90%;
     gap: 1rem;
     
+}
+@media(max-width:800px){
+    .target-anime{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 1rem;
+        
+        
+    }
+    .naruto img{
+        width: 50%;
+        height: 300px;
+    }
+    .demon-slayer img{
+        width: 50%;
+        height: 300px;
+
+    }
+     
+
 }
 .target-anime-select{
     border: 0;
