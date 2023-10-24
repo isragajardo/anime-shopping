@@ -6,15 +6,20 @@ const numeroCarrito = document.querySelector("#numero-carrito");
 const naruto = document.querySelector("#naruto");
 const demonSlayer = document.querySelector("#demon-slayer");
 const animeSelect = document.querySelector("#anime-select");
-const menu = document.querySelector("#menu")
+const menu = document.querySelector("#menu");
+const volverNaruto = document.querySelector("#volver-naruto");
+const volverDs = document.querySelector("#volver-ds");
+
 let productosEnCarrito = []
 let productos = [];
 let btnAgregarCarrito
 
-naruto.addEventListener("click", ()=>{
-
-    document.documentElement.style.setProperty('--fondo', 'url("../img/fondo-naruto.jpg")');
+const cambioPagNaruto = ()=>{
+    document.documentElement.style.setProperty('--fondo', '#FF8000');
     animeSelect.classList.add("disabled")
+    volverDs.classList.remove("disabled")
+    volverNaruto.classList.add("disabled")
+
 
 
     fetch('./json/productos-naruto.json')
@@ -24,18 +29,19 @@ naruto.addEventListener("click", ()=>{
       setTimeout(()=>{
         menu.classList.remove("disabled")
         cargarProductos(productos)
-      },200)
+      },300)
       
     })
     .catch(error => console.error('Error al cargar productos:', error));
+}
 
-})
-
-demonSlayer.addEventListener("click", ()=>{
-
-    document.documentElement.style.setProperty('--fondo', 'url("../img/fondo-ds.png")');
+const cambioPagDs = ()=>{
+    document.documentElement.style.setProperty('--fondo', 'green');
     animeSelect.classList.add("disabled")
-    
+    volverNaruto.classList.remove("disabled")
+    volverDs.classList.add("disabled")
+
+
     fetch('./json/productos-demon-slayer.json')
     .then(response => response.json())
     .then(data => {
@@ -43,21 +49,41 @@ demonSlayer.addEventListener("click", ()=>{
       setTimeout(()=>{
         menu.classList.remove("disabled")
         cargarProductos(productos)
-      },200)
+      },300)
       
     })
     .catch(error => console.error('Error al cargar productos:', error));
+    
+}
+
+naruto.addEventListener("click", ()=>{
+
+   cambioPagNaruto();
+
+
+})
+
+ 
+
+ demonSlayer.addEventListener("click", ()=>{
+
+    cambioPagDs();
+    
+   
+
+})
+
+volverNaruto.addEventListener("click",()=>{
+    cambioPagNaruto();
+
+})
+volverDs.addEventListener("click",()=>{
+    cambioPagDs();
 
 })
 
 
 
-
-/***fetch */
-
-
-
-/*******/
 
 
 

@@ -5,7 +5,7 @@
     --color-white: #ececec;
     --color-gray: #c2bfbf;
     --color-red: #961818;
-    --fondo: url("../img/fondo-naruto.jpg");
+    --fondo: #5c4646;
     --color-letra-titulo:var(--color-white)
 
 }
@@ -66,7 +66,7 @@ h1
 {
     display: grid;
     grid-template-columns: 1fr 4fr;
-    background-color: #5c4646;
+    background-color: var(--fondo);
     
 }
 
@@ -125,7 +125,7 @@ aside{
 }
 .text-footer
 {
-    color: var(--color-gray);
+    color: white;
     font-size: .85rem;
 }
 
@@ -136,6 +136,46 @@ main
     margin-left: 0;
     border-radius: 2rem;
     padding: 2rem;
+}
+
+.volver
+{
+    border: 0;
+    align-items: flex-start;
+    
+    
+ 
+}
+.volver-naruto-text{
+    font-size: 1.2rem;
+    color: #FF8000;
+    transform: translate(1.2rem,0);
+
+    
+}
+
+.btn-volver
+{
+    background-color: transparent;
+    border: none;
+    margin-bottom: 4rem;
+
+}
+.btn-volver:hover{
+    -webkit-animation: 4s rotate linear infinite;
+    animation: 2s rotate  ;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-animation-direction: reverse;
+     animation-direction: reverse;
+    
+}
+.img-volver
+{
+    width: 100px;
+
+   
+
 }
 .titulo-principal
 {
@@ -306,16 +346,24 @@ main
 
 }
 .naruto{
-    box-shadow: 0px -1px 20px 1px orange;
+    box-shadow: 0px 1px 20px 1px rgb(34, 32, 28);
+    height: 80%;
     
+}
+.naruto img{
+    height: 80%;
 }
 .naruto:hover{
     box-shadow: 0px -1px 20px 15px orange;
     
 }
 .demon-slayer{
-    box-shadow: 0px -1px 20px 1px green;
+    box-shadow: 0px 1px 20px 1px rgb(34, 32, 28);
+    height: 80%;
 
+}
+.demon-slayer img{
+    height: 80%;
 }
 .demon-slayer:hover{
     box-shadow: 0px -1px 20px 15px green;
