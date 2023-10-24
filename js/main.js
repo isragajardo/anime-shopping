@@ -25,7 +25,7 @@ const cambioPagNaruto = ()=>{
     fetch('./json/productos-naruto.json')
     .then(response => response.json())
     .then(data => {
-      productos = data; // aqui asigno el JSON a la variable "productos"
+      productos = data;
       setTimeout(()=>{
         menu.classList.remove("disabled")
         cargarProductos(productos)
@@ -49,13 +49,9 @@ const cambioPagDs = async()=>{
         cargarProductos(data);
         menu.classList.remove("disabled")
 
-
-
-
-        
-    } catch{
+       } catch{
         console.error('Error al cargar productos:', error)
-    }
+       }
     
     
 }
