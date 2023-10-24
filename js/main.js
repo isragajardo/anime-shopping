@@ -46,7 +46,8 @@ const cambioPagDs = async()=>{
 
         const response = await fetch('./json/productos-demon-slayer.json');
         const data = await response.json();
-        cargarProductos(data);
+        productos = data;
+        cargarProductos(productos);
         menu.classList.remove("disabled")
 
        } catch{
