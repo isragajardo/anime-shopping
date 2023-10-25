@@ -9,6 +9,8 @@ const animeSelect = document.querySelector("#anime-select");
 const menu = document.querySelector("#menu");
 const volverNaruto = document.querySelector("#volver-naruto");
 const volverDs = document.querySelector("#volver-ds");
+const loadNaruto = document.querySelector("#load-naruto");
+const loadDs = document.querySelector("#load-ds")
 
 let productosEnCarrito = []
 let productos = [];
@@ -19,6 +21,7 @@ const cambioPagNaruto = ()=>{
     animeSelect.classList.add("disabled")
     volverDs.classList.remove("disabled")
     volverNaruto.classList.add("disabled")
+    loadNaruto.classList.add("disabled")
 
 
 
@@ -36,16 +39,21 @@ const cambioPagNaruto = ()=>{
 }
 
 const cambioPagDs = async()=>{
+
+     
     document.documentElement.style.setProperty('--fondo', 'green');
     animeSelect.classList.add("disabled")
     volverNaruto.classList.remove("disabled")
     volverDs.classList.add("disabled")
+    loadDs.classList.add("disabled")
+
 
 
     try{
 
         const response = await fetch('./json/productos-demon-slayer.json');
         const data = await response.json();
+       
         productos = data;
         cargarProductos(productos);
         menu.classList.remove("disabled")
@@ -59,7 +67,16 @@ const cambioPagDs = async()=>{
 
 naruto.addEventListener("click", ()=>{
 
-   cambioPagNaruto();
+    animeSelect.classList.add("disabled")
+    loadNaruto.classList.remove("disabled")
+    setTimeout(()=>{
+        cambioPagNaruto();
+
+    },1000)
+
+
+
+   
 
 
 })
@@ -68,7 +85,13 @@ naruto.addEventListener("click", ()=>{
 
  demonSlayer.addEventListener("click", ()=>{
 
-    cambioPagDs();
+    animeSelect.classList.add("disabled")
+    loadDs.classList.remove("disabled")
+    setTimeout(()=>{
+        cambioPagDs();
+
+    },1000)
+
     
    
 
