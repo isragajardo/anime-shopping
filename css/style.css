@@ -444,6 +444,15 @@ width: 60%;
 margin-left: 15%;
 transition: 2s;
 }
+@media(max-width:800px)
+{
+    .load-naruto .load-naruto-img{
+    
+        width: 100%;
+        margin-left: 15%;
+        transition: 2s;
+        }
+}
 
 
 .load-ds{
