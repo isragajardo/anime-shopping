@@ -21,6 +21,19 @@ h1, h2, h3, h4, h5, h6, p, a, input, textarea, ul {
     margin: 0;
     padding: 0;
 }
+header{
+    gap: 5rem;
+    display: flex;
+    flex-direction: column;
+}
+@media(max-width:800px)
+{
+    header{
+        flex-direction: row;
+        justify-content:space-between
+    }
+   
+}
 
 ul
 {
@@ -119,10 +132,7 @@ aside{
     border-bottom-left-radius: 1rem;
 }
 
-.btn-carrito
-{
-    margin-top: 2rem;
-}
+
 .text-footer
 {
     color: white;
@@ -313,6 +323,7 @@ main
 }
 
 
+
 .wrapper
 {
     display: grid;
@@ -366,8 +377,14 @@ main
         
     }
     .menu{
-        display: none;
-        
+        background-color:var(--color-white);
+        display: flex;
+        flex-direction: column;
+        border-radius: 15%;
+
+    }
+    .btn-menu{
+        color: black;
     }
 
    
@@ -383,10 +400,7 @@ main
         margin-top: 250px;
         margin-left: 20px;
     }
-    .volver{
-        transform: translate(200px, -100px);
-    }
-   
+    
 
      
 
@@ -465,6 +479,7 @@ transition: 2s;
             /border-top-right-radius: 48%;*/
         
         }
+       
 }
 
 
@@ -475,4 +490,6 @@ transition: 2s;
 .espada{
     width: 20%;
 }
+
+
 
