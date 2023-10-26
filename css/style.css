@@ -386,15 +386,16 @@ main
     .volver{
         transform: translate(200px, -100px);
     }
+   
 
      
 
 }
 .target-anime-select{
     border: 0;
-   
-    border-top-left-radius: 48%;
-    border-top-right-radius: 48%;
+    border-radius: 50%;
+    /*border-top-left-radius: 48%;
+    /border-top-right-radius: 48%;*/
 
 }
 .naruto{
@@ -451,6 +452,14 @@ transition: 2s;
         width: 100%;
         margin-left: 15%;
         transition: 2s;
+        }
+
+        .target-anime-select{
+            border: 0;
+            border-radius: 30%;
+            /*border-top-left-radius: 48%;
+            /border-top-right-radius: 48%;*/
+        
         }
 }
 
