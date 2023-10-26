@@ -449,9 +449,12 @@ transition: 2s;
 {
     .load-naruto .load-naruto-img{
     
-        width: 100%;
-        margin-left: 15%;
+        width: 150%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         transition: 2s;
+        transform: translate(-300px);
         }
 
         .target-anime-select{
