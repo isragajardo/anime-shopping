@@ -22,15 +22,23 @@ h1, h2, h3, h4, h5, h6, p, a, input, textarea, ul {
     padding: 0;
 }
 header{
-    gap: 5rem;
+    
     display: flex;
     flex-direction: column;
+    height: 80vh;
+    justify-content: space-between;
+    gap: 1rem;
 }
 @media(max-width:800px)
 {
     header{
         flex-direction: row;
-        justify-content:space-between
+    
+        
+    }
+    .logo
+    {
+        padding-right: 2rem;
     }
    
 }
