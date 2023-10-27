@@ -7,7 +7,12 @@ const contenedorProductos = document.querySelector("#carrito-productos")
 const carritoComprado = document.querySelector("#carrito-comprado")
 const vaciarCarrito = document.querySelector("#vaciar-carrito")
 const total = document.querySelector("#total")
-let btnEliminar = document.querySelectorAll(".carrito-producto-eliminar")
+const btnComprar = document.querySelector(".carrito-acciones-comprar");
+const btnEliminar = document.querySelectorAll(".carrito-producto-eliminar")
+
+
+
+
 
 
 
@@ -74,7 +79,7 @@ cargarProductosCarrito()
 
 function actualizarBotonesEliminar() {
     
-    btnEliminar = document.querySelectorAll(".carrito-producto-eliminar")
+   
     
     
 
@@ -132,10 +137,15 @@ function actualizarTotal(){
     total.innerText = productosEnCarrito.reduce((acumulador, producto) => acumulador + (producto.precio * producto.cantidad),0)
 }
 
-btnComprar = document.querySelector(".carrito-acciones-comprar");
+
 btnComprar.addEventListener("click", ()=>{
 
-   
+    Swal.fire({
+        position: 'center',
+        icon: 'success',
+        title: 'Muchas gracias por tu compra',
+        showConfirmButton: false,
+        timer: 3000
+      })
     document.querySelector("#contenedor-carrito").classList.add("disabled")
-    document.querySelector("#carrito-comprado").classList.remove("disabled")
 })

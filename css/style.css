@@ -33,6 +33,7 @@ header{
 {
     header{
         flex-direction: row;
+        justify-content: center;
     
         
     }
@@ -88,6 +89,7 @@ h1
     display: grid;
     grid-template-columns: 1fr 4fr;
     background-color: var(--fondo);
+    gap: 1rem;
     
 }
 
@@ -101,6 +103,7 @@ aside{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    height: 100vh;
 }
 
 .logo
@@ -135,7 +138,7 @@ aside{
     background-color: var(--color-white);
     color: var(--color-main);
     width: 100%;
-    padding: 1.50rem;
+    
     border-top-left-radius:1rem ;
     border-bottom-left-radius: 1rem;
 }
@@ -238,6 +241,27 @@ main
 }
 
 /** carrito **/
+.btn-seguir-comprando 
+    {
+        display: flex;
+        justify-content: center;
+        height: 40px;
+        
+    }
+    .btn-seguir-comprando button
+    {
+        padding: 0.5rem;
+        border-radius: 15%;
+        font-family: 'Bebas Neue', sans-serif;
+        font-family: 'Roboto Mono', monospace;
+        font-family: 'Russo One', sans-serif;
+        font-family: 'Space Mono', monospace;
+        
+    
+        
+    }
+
+
 
 .contenedor-carrito
 {
@@ -263,6 +287,32 @@ main
     padding: .5rem;
     align-items: center;
     border-radius: 1rem;
+}
+@media(max-width:800px)
+{
+    .contenedor-carrito
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    .carrito-productos div
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .carrito-productos div div
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.2rem;
+
+    }
+    
+
+   
 }
 
 .carrito-imagen
@@ -324,6 +374,15 @@ main
     border-radius: 1rem;
     text-transform: uppercase;
 }
+.numero-carrito
+{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    width: 1.5rem;
+    border-radius: 50%;
+    color: rgb(224, 205, 205);
+}
 
 .disabled
 {
@@ -332,12 +391,7 @@ main
 
 
 
-.wrapper
-{
-    display: grid;
-    grid-template-columns: 1fr 4fr;
-    
-}
+
 .titulo-anime{
     display: flex;
     justify-content: center;
@@ -354,18 +408,18 @@ main
     .target-anime{
         display: grid;
         grid-template-columns: repeat(2,1fr);
-        gap: 1rem;
+        gap: 2rem;
         
         
     }
     .naruto img{
-        width: 80%;
+        width: 100%;
         height: 300px;
     }
-    .demon-slayer img{
-        width: 80%;
-        height: 300px;
-
+    .ds-img{
+        width: 100%;
+        height: 100%;
+        
     }
     .wrapper
     {
@@ -375,22 +429,21 @@ main
         
     }
     aside{
-        height: 30vh;
+        height: 22vh;
         background-color: var(--fondo);
         position: fixed;
         width: 100%;
-        
-        
-        
         
     }
     .menu{
         background-color:var(--color-white);
         display: flex;
         flex-direction: column;
-        border-radius: 15%;
+        border-radius: 10%;
+        margin-right: 2rem;
 
     }
+    
     .btn-menu{
         color: black;
     }
@@ -463,20 +516,20 @@ main
 }
 .load-naruto .load-naruto-img{
     
-width: 60%;
-margin-left: 15%;
+width: 100%;
 transition: 2s;
 }
 @media(max-width:800px)
 {
     .load-naruto .load-naruto-img{
     
-        width: 140%;
+        
         display: flex;
         justify-content: center;
         align-items: center;
         transition: 2s;
-        transform: translate(-100px);
+        width: 135%;
+        transform: translate(-50px);
         }
 
         .target-anime-select{

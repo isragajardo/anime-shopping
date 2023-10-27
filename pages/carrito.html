@@ -4,34 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../css/style.css">
     <script src="../js/carrito.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"> defer</script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link rel="stylesheet" href="../css/style.css">
+    
+
 </head>
 <body>
 
+
     <div class="wrapper">
         <aside>
+            
             <header>
-                <h1 class="logo">IsraShop</h1>
-            </header>
-            <nav class="menu">
-                <ul class="menu">
-                    <li>
-                        <a class="btn-menu btn-categoria" href="../index.html">Todos los productos</a>
-                        
-                    </li>
-                    
-                    <li><a class="btn-carrito btn-menu active" href="./pages/carrito.html">Carrito </a>
-                    </li>
-                </ul>
-            </nav>
+                
+                   <div class="logo">
 
-            <footer>
-                <p class="text-footer"> © pag de isra</p>
-            </footer>
+                     <a href="../index.html"><img class="logo-img" src="../img/logo.png" alt=""></a>
+                     <h1 class="animate__backInDown">ANIME</h1>
+                     <H2 class="animate__backInDown">SHOPPING</H2>
+
+
+                    </div>
+
+                      
+            </header>
+            
+
+            
+
+        
 
         </aside>
+        
+
         <main>
+            <div class="btn-seguir-comprando">
+                <a href="../index.html"><button class="btn-seguir-comprando">Seguir comprando</button></a>
+            </div>
             <h2 class="titulo-carrito">Carrito</h2>
             <p id="carrito-vacio" class="carrito-vacio">
                 Tu carrito esta vacio
@@ -41,6 +55,7 @@
 
                 <div id="carrito-productos" class="carrito-productos disabled">
                     
+              
                 </div>
 
                 <div id="carrito-acciones" class="carrito-acciones disabled">
@@ -73,6 +88,9 @@
         
 
         </main>
+        <footer>
+            <p class="text-footer"> © pag de isra</p>
+        </footer>
     </div>
     
 </body>
