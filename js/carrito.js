@@ -8,7 +8,6 @@ const carritoComprado = document.querySelector("#carrito-comprado")
 const vaciarCarrito = document.querySelector("#vaciar-carrito")
 const total = document.querySelector("#total")
 const btnComprar = document.querySelector(".carrito-acciones-comprar");
-const btnEliminar = document.querySelectorAll(".carrito-producto-eliminar")
 
 
 
@@ -80,7 +79,8 @@ cargarProductosCarrito()
 function actualizarBotonesEliminar() {
     
    
-    
+    const btnEliminar = document.querySelectorAll(".carrito-producto-eliminar")
+
     
 
     btnEliminar.forEach(boton =>{
