@@ -429,7 +429,7 @@ main
         
     }
     aside{
-        height: 22vh;
+        height: 26vh;
         background-color: var(--fondo);
         position: fixed;
         width: 100%;
