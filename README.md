@@ -19,6 +19,6 @@ Este e-commerce tiene como objetivo poder vender productos según una categoría
 -en el carrito, tenemos 4 botones
   * el primero es para seguir comprando, este te devuelve a  seleccionar anime para volver a elegir productos
   * el segundo es para eliminar el producto del carrito
-  que con este se elimina el índice del objeto del localStorage
+  que con este se elimina el índice del objeto en localStorage
   * el tercero es para vaciar completamente el carrito aplicando un clear al localStorage
   * el cuarto es para "COMPRAR" al seleccionarlo finalizar la compra usando una alerta de la librería SweetAlert
