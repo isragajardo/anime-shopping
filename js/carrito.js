@@ -141,12 +141,12 @@ function actualizarTotal(){
 btnComprar.addEventListener("click", ()=>{
      
     let totalF = productosEnCarrito.reduce((acumulador, producto) => acumulador + (producto.precio * producto.cantidad),0)
-    
+    let totalIva = parseInt(totalF*1.19)
     
     if(totalF>0)
     {
         Swal.fire({
-            title: 'Total $'+totalF*1.19,
+            title: 'Total $'+totalIva,
             text: "Subtotal :"+totalF + " + IVA (19%)",
             icon: 'question',
             showCancelButton: true,
