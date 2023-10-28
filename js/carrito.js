@@ -143,25 +143,37 @@ btnComprar.addEventListener("click", ()=>{
     let totalF = productosEnCarrito.reduce((acumulador, producto) => acumulador + (producto.precio * producto.cantidad),0)
     
     
-    
-    Swal.fire({
-        title: 'Total $'+totalF*1.19,
-        text: "Subtotal :"+totalF + " + IVA (19%)",
-        icon: 'question',
-        showCancelButton: true,
-        confirmButtonColor: '#3085d6',
-        cancelButtonColor: '#d33',
-        confirmButtonText: 'Pagar'
-      }).then((result) => {
-        if (result.isConfirmed) {
-          Swal.fire(
-            'Pagado!',
-            'Muchas gracias por su compra!',
-            'success'
+    if(totalF>0)
+    {
+        Swal.fire({
+            title: 'Total $'+totalF*1.19,
+            text: "Subtotal :"+totalF + " + IVA (19%)",
+            icon: 'question',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Pagar'
+          }).then((result) => {
+            if (result.isConfirmed) {
+              Swal.fire(
+                'Pagado!',
+                'Muchas gracias por su compra!',
+                'success'
+                
+              )
+              localStorage.clear();
+              document.querySelector("#contenedor-carrito").classList.add("disabled")
+
+            }
             
-          )
-          localStorage.clear();
-        }
-      })
-    document.querySelector("#contenedor-carrito").classList.add("disabled")
+          })
+
+    }
+    else
+    {
+        Swal.fire('Tu carrito esta vacio')
+
+
+    }
+    
 })

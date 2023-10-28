@@ -2,82 +2,263 @@
     
     {
         "id": "ds-abrigo-01",
-        "titulo": "kimetsu no yaiba",
+        "titulo": "Abrigo amarillo",
         "imagen": "./img/kimetsu-no-yaiba/ds-abrigos/ds-abrigo-01.png",
         "categoria": {
             "nombre": "Abrigos kimetsu no yaiba",
             "id": "abrigos"
         },
-        "precio": 1000
+        "precio": 16990
     },
     {
         "id": "ds-abrigo-02",
-        "titulo": "kimetsu no yaiba",
+        "titulo": "Abrigo mujer Kimetsu",
         "imagen": "./img/kimetsu-no-yaiba/ds-abrigos/ds-abrigo-02.png",
         "categoria": {
             "nombre": "Abrigos kimetsu no yaiba",
             "id": "abrigos"
         },
-        "precio": 1000
+        "precio": 15990
     },
     {
         "id": "ds-abrigo-03",
-        "titulo": "kimetsu no yaiba",
+        "titulo": "Abrigo Tanjiro",
         "imagen": "./img/kimetsu-no-yaiba/ds-abrigos/ds-abrigo-03.png",
         "categoria": {
             "nombre": "Abrigos kimetsu no yaiba",
             "id": "abrigos"
         },
-        "precio": 1000
+        "precio": 15990
     },
     {
         "id": "ds-abrigo-04",
-        "titulo": "kimetsu no yaiba",
+        "titulo": "Abrigo Nezuko",
         "imagen": "./img/kimetsu-no-yaiba/ds-abrigos/ds-abrigo-04.png",
         "categoria": {
             "nombre": "Abrigos kimetsu no yaiba",
             "id": "abrigos"
         },
-        "precio": 1000
+        "precio": 16990
     },
     {
         "id": "ds-abrigo-05",
-        "titulo": "kimetsu no yaiba",
+        "titulo": "Abrigo verde",
         "imagen": "./img/kimetsu-no-yaiba/ds-abrigos/ds-abrigo-05.png",
         "categoria": {
             "nombre": "Abrigos kimetsu no yaiba",
             "id": "abrigos"
         },
-        "precio": 1000
+        "precio": 15990
     },
     {
         "id": "ds-abrigo-06",
-        "titulo": "kimetsu no yaiba",
+        "titulo": "Abrigo blanco Kimetsu",
         "imagen": "./img/kimetsu-no-yaiba/ds-abrigos/ds-abrigo-06.png",
         "categoria": {
             "nombre": "Abrigos kimetsu no yaiba",
             "id": "abrigos"
         },
-        "precio": 1000
+        "precio": 16990
     },
     {
         "id": "ds-abrigo-07",
-        "titulo": "kimetsu no yaiba",
+        "titulo": "Abrigo morado",
         "imagen": "./img/kimetsu-no-yaiba/ds-abrigos/ds-abrigo-07.png",
         "categoria": {
             "nombre": "Abrigos kimetsu no yaiba",
             "id": "abrigos"
         },
-        "precio": 1000
+        "precio": 14990
     },
     {
         "id": "ds-abrigo-08",
-        "titulo": "kimetsu no yaiba",
+        "titulo": "Abrigo Cuadrille",
         "imagen": "./img/kimetsu-no-yaiba/ds-abrigos/ds-abrigo-08.png",
         "categoria": {
             "nombre": "Abrigos kimetsu no yaiba",
             "id": "abrigos"
         },
-        "precio": 1000
+        "precio": 16990
+        
+    },
+
+    
+    {
+        "id": "ds-camiseta-01",
+        "titulo": "Camiseta Tanjito de fuego",
+        "imagen": "./img/kimetsu-no-yaiba/ds-camisetas/camiseta-ds-01.png",
+        "categoria": {
+            "nombre": "Camisetas kimetsu no yaiba",
+            "id": "camisetas"
+        },
+        "precio": 15990
+
+    },
+    {
+        "id": "ds-camiseta-02",
+        "titulo": "Camiseta Nezuco blanca",
+        "imagen": "./img/kimetsu-no-yaiba/ds-camisetas/camiseta-ds-02.png",
+        "categoria": {
+            "nombre": "Camisetas kimetsu no yaiba",
+            "id": "camisetas"
+        },
+        "precio": 9990
+
+    },
+    {
+        "id": "ds-camiseta-03",
+        "titulo": "Camiseta de Nezuko",
+        "imagen": "./img/kimetsu-no-yaiba/ds-camisetas/camiseta-ds-03.png",
+        "categoria": {
+            "nombre": "Camisetas kimetsu no yaiba",
+            "id": "camisetas"
+        },
+        "precio": 9990
+
+    },
+    {
+        "id": "ds-camiseta-04",
+        "titulo": "Camiseta de Kyojuro Rengoku",
+        "imagen": "./img/kimetsu-no-yaiba/ds-camisetas/camiseta-ds-04.png",
+        "categoria": {
+            "nombre": "Camisetas kimetsu no yaiba",
+            "id": "camisetas"
+        },
+        "precio": 14990
+
+    },
+    {
+        "id": "ds-camiseta-05",
+        "titulo": "Camiseta Kimetsu con cuadros",
+        "imagen": "./img/kimetsu-no-yaiba/ds-camisetas/camiseta-ds-05.png",
+        "categoria": {
+            "nombre": "Camisetas kimetsu no yaiba",
+            "id": "camisetas"
+        },
+        "precio": 11990
+
+    },
+    {
+        "id": "ds-camiseta-06",
+        "titulo": "Camiseta Kimetsu con cuadro",
+        "imagen": "./img/kimetsu-no-yaiba/ds-camisetas/camiseta-ds-06.png",
+        "categoria": {
+            "nombre": "Camisetas kimetsu no yaiba",
+            "id": "camisetas"
+        },
+        "precio": 12990
+
+    },
+    {
+        "id": "ds-camiseta-07",
+        "titulo": "Camiseta Kimetsu blanca",
+        "imagen": "./img/kimetsu-no-yaiba/ds-camisetas/camiseta-ds-07.png",
+        "categoria": {
+            "nombre": "Camisetas kimetsu no yaiba",
+            "id": "camisetas"
+        },
+        "precio": 12990
+
+    },
+    {
+        "id": "ds-camiseta-08",
+        "titulo": "Camiseta de Tanjiro verde",
+        "imagen": "./img/kimetsu-no-yaiba/ds-camisetas/camiseta-ds-08.png",
+        "categoria": {
+            "nombre": "Camisetas kimetsu no yaiba",
+            "id": "camisetas"
+        },
+        "precio": 9990
+
+    },
+
+
+    {
+        "id": "ds-pantalon-01",
+        "titulo": "Pantalon negro kjajsaakj",
+        "imagen": "./img/kimetsu-no-yaiba/ds-pantalones/pantalon-ds-01.png",
+        "categoria": {
+            "nombre": "Pantalones kimetsu no yaiba",
+            "id": "pantalones"
+        },
+        "precio": 9990
+
+    },
+    {
+        "id": "ds-pantalon-02",
+        "titulo": "Pantalon de Tanjiro verde",
+        "imagen": "./img/kimetsu-no-yaiba/ds-pantalones/pantalon-ds-02.png",
+        "categoria": {
+            "nombre": "Pantalones kimetsu no yaiba",
+            "id": "pantalones"
+        },
+        "precio": 14990
+
+    },
+    {
+        "id": "ds-pantalon-03",
+        "titulo": "Camiseta de Tanjiro blanco",
+        "imagen": "./img/kimetsu-no-yaiba/ds-pantalones/pantalon-ds-03.png",
+        "categoria": {
+            "nombre": "Pantalones kimetsu no yaiba",
+            "id": "pantalones"
+        },
+        "precio": 12990
+
+    },
+    {
+        "id": "ds-pantalon-04",
+        "titulo": "pantalon azul Giyu Tomioka",
+        "imagen": "./img/kimetsu-no-yaiba/ds-pantalones/pantalon-ds-04.png",
+        "categoria": {
+            "nombre": "Pantalones kimetsu no yaiba",
+            "id": "pantalones"
+        },
+        "precio": 9990
+
+    },
+    {
+        "id": "ds-pantalon-05",
+        "titulo": "Pantalon negro Giyu Tomioka",
+        "imagen": "./img/kimetsu-no-yaiba/ds-pantalones/pantalon-ds-05.png",
+        "categoria": {
+            "nombre": "Pantalones kimetsu no yaiba",
+            "id": "pantalones"
+        },
+        "precio": 12990
+
+    },
+    {
+        "id": "ds-pantalon-06",
+        "titulo": "Pantalon Zenitsu Agatsuma",
+        "imagen": "./img/kimetsu-no-yaiba/ds-pantalones/pantalon-ds-06.png",
+        "categoria": {
+            "nombre": "Pantalones kimetsu no yaiba",
+            "id": "pantalones"
+        },
+        "precio": 14990
+
+    },
+    {
+        "id": "ds-pantalon-07",
+        "titulo": "Pantalon rosa Nezuko",
+        "imagen": "./img/kimetsu-no-yaiba/ds-pantalones/pantalon-ds-07.png",
+        "categoria": {
+            "nombre": "Pantalones kimetsu no yaiba",
+            "id": "pantalones"
+        },
+        "precio": 14990
+
+    },
+    {
+        "id": "ds-pantalon-08",
+        "titulo": "Pantalon mora Kanao Tsuyuri",
+        "imagen": "./img/kimetsu-no-yaiba/ds-pantalones/pantalon-ds-08.png",
+        "categoria": {
+            "nombre": "Pantalones kimetsu no yaiba",
+            "id": "pantalones"
+        },
+        "precio": 15990
+
     }
 ]
