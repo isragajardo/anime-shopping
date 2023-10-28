@@ -220,6 +220,8 @@ main
     display: flex;
     flex-direction: column;
     padding: 0.60rem;
+    height: 14rem;
+    justify-content: space-between;
 }
 
 .producto-agregar
@@ -456,6 +458,7 @@ main
     {
         
         position: inherit; 
+        
     }
     main{
         margin-top: 250px;
